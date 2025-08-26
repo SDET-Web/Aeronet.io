@@ -1,5 +1,4 @@
-Aeronet.io 
-Main objective of website
+Aeronet.io ( Main objective )
  
 Recruiting and sourcing top-tier aviation talent is challenging. 
 It can take a lot of time to find a crew member who fits well with both the aircraft and the company culture, and rushing this process often leads to costly mistakes. In fact, HR research shows that replacing a poor hire can cost up to twice their annual salary.
