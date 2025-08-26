@@ -1,0 +1,42 @@
+<div class="flightinfo"><h4> </h4><div class="well flight active" id="flight-N628MC-1520647275-14-0-9" onclick="flightSelected($(this))">  <input type="radio" name="flightSelected" checked="checked" value="N628MC-1520647275-14-0-9">  <div class="time col-xs-5 text-right">    <div>08:15PM</div>      <div class="origin">KELP</div>  </div>
+<div class="through col-xs-2"></div>  <div class="time col-xs-5 text-left">    <div>12:47AM</div>    <div class="origin">KHOU</div>  </div>  <div class="clearfix"></div></div>
+<div id="map-1520983668" style="min-height:250px;"></div><br /><div id="gallery-1520983668"></div><div class="clearfix"></div>
+      <script>
+			$('#gallery-1520983668').imagesGrid({
+				images: [
+			    '/lazyeight/upload/photo/1520983651.jpeg',
+			    '/lazyeight/upload/photo/1520983651.jpg',
+			    '/lazyeight/upload/photo/1520983651.jpg',
+			    '/lazyeight/upload/photo/1520983652.jpg',
+			    '/lazyeight/upload/photo/1520983652.jpg'
+			  ]
+			});
+
+      var map1520983668 = new google.maps.Map(document.getElementById("map-1520983668"), {
+        zoom: 5,
+        center: {lat: 31.8073333, lng: -106.3763611},
+        mapTypeId: "terrain"
+      });
+
+      var flightPath = new google.maps.Polyline({
+        path: [{"lat":"31.8073333","lng":"-106.3763611"},{"lat":"30.9522222","lng":"-102.9758333"},{"lat":"29.6441667","lng":"-98.4613889"},{"lat":"29.6454167","lng":"-95.2788889"}],
+        geodesic: true,
+        strokeColor: "#FF0000",
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+
+      var marker = new google.maps.Marker({
+              position: 31.8073333,
+              map: map1520983668,
+              title: "Take Off"
+      });
+
+      var marker = new google.maps.Marker({
+              position: -95.2788889,
+              map: map1520983668,
+              title: "Landing"
+      });
+
+      flightPath.setMap(map1520983668);
+      </script></div>
